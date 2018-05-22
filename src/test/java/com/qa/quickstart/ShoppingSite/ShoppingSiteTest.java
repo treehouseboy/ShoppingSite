@@ -16,8 +16,6 @@ public class ShoppingSiteTest {
 
 	WebDriver driver;
 	WebElement checkElement;
-	String username = "person";
-	String password = "password";
 
 	@Before
 	public void setup() {
@@ -34,6 +32,20 @@ public class ShoppingSiteTest {
 		checkElement = driver.findElement(By.xpath("//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/h5/a"));
 		assertEquals("Printed Summer Dress", checkElement.getText());
 	}
+	
+//	@Test
+//	public void findDressTest() {
+//		
+//		element = driver.findElements(dress class name)
+//		element2 = null
+//		for(WebElement a : element)
+//			if(a.gettext.equals("desiredstring"))
+//				element2 = a
+//				
+//				assertEquals("desiredstring", element2)
+//		
+//		
+//	}
 
 	@After
 	public void teardown() {
